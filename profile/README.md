@@ -14,19 +14,19 @@
 
 - 独立保存网站代码，负责浏览、检索与展示。
 - 从 `group-archive` 读取记录与日报，从 `group-members` 读取成员资料。
-- 网站访问权限独立控制；私有仓库的读取通过服务端或构建阶段完成，不向浏览器暴露 GitHub 凭据。
+- 网站访问权限独立控制；私有仓库的读取通过服务端或构建阶段完成，GitHub 凭据保留在服务端。
 - 后续再建。
 
 ### group-archive (privte) — 群聊档案
 
 - 保存原始聊天记录（chatlog）、日报（report）与话题覆盖索引。
-- 作为后续网站的数据源，不放网站代码。
+- 作为后续网站的数据源。
 - 私有仓库，仅授权成员访问。
 
 ### group-members (privte) — 三群成员
 
 - 保存三群真实成员名单、成员展示数据与群配置。
-- 通用代码继续维护在 [GinWU05/wegroup-members](https://github.com/GinWU05/wegroup-members)，本仓库引用固定版本，不复制通用代码。
+- 通用代码维护在 [GinWU05/wegroup-members](https://github.com/GinWU05/wegroup-members)，本仓库引用固定版本。
 - 包含真实名单，建议设为私有仓库。
 
 ### group-summary — 群聊总结实现
